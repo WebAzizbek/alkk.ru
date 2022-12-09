@@ -1,0 +1,35 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: $font-fira;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 4%;
+    color: $color-text;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    margin: 0;
+}
+.site__container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container {
+    width: 100%;
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+}

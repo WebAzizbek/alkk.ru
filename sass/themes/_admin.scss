@@ -1,0 +1,88 @@
+.run {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-text;
+    color: $color-white;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+    translate: -100%;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 100;
+    .site__container {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.run__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.run__header-logo {
+    img {
+        display: block;
+    }
+}
+.run__header-x {
+    img {
+        display: block;
+    }
+}
+.run__main {
+}
+.run__futuare {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+.run__futuraes-item {
+
+}
+.run__futuraes-item-link {
+    font-size: 20px;
+    line-height: 30px;
+}
+.run__nav {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.run__nav-item {
+}
+.run__nav-item-link {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 4%;
+}
+.run__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+}
+.run__footer-app {
+}
+.run__footer-app-link {
+    display: inline-block;
+}
+.run__footer-app-link:not(:last-child) {
+    margin-right: 7px;
+}
+.run__footer-num {
+    font-family: $font-arimo;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+}

@@ -1,0 +1,23 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == laptop-1600 {
+        @media only screen and (max-width: 1600px) { @content }
+    };
+    @if $breakpoint == big-laptop {
+        @media only screen and (max-width: 1300px) { @content }
+    };
+    @if $breakpoint == laptop {
+        @media only screen and (max-width: 1200px) { @content }
+    };
+    @if $breakpoint == big-table {
+        @media only screen and (max-width: 992px) { @content }
+    };
+    @if $breakpoint == table {
+        @media only screen and (max-width: 768px) { @content }
+    };
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 576px) { @content }
+    };
+    @if $breakpoint == litle-phone {
+        @media only screen and (max-width: 380px) { @content }
+    }
+}

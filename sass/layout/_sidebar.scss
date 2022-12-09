@@ -38,7 +38,7 @@
     background: linear-gradient(0deg, #F5F7F9, #F5F7F9), #ECE8E5;
     @include responsive(table) {
         margin-bottom: 40px;
-        padding: 20px 0;
+        padding: 60px 0;
     }
     .container {
     }
@@ -83,7 +83,9 @@
 .calc__wrapper {
     padding: 45px 46px 45px 47px;
     box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
+    border-radius: 20px; 
+    text-align: center;
+    background-color: #FFFFFF;
     @include responsive(big-table) {
         padding: 35px 36px 35px 37px;
     }
@@ -228,6 +230,7 @@
 // input
 .range {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .range-const {
     display: flex;
@@ -254,7 +257,7 @@
 }
 
 .range-input {
-    background: #d5d7ce;
+    background: #F4F7FE;
 }
 
 
@@ -280,5 +283,113 @@ input[type=range]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     box-shadow: none;
     border: none;
+}
+
+.calc__btn {
+    display: inline-block;
+    font-family: $font-arimo;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 11px 30px;
+    border: 1px solid #FF0404;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $color-primary;
+    margin-bottom: 45px;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        transition: all .4s;
+    }
+}
+
+.plan {
+    position: relative;
+}
+.plan__center {
+    margin: 0 7px;
+    @include responsive(table) {
+        display: none;
+    }
+}
+.plan__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 36px;
+    @include responsive(big-table) {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    @include responsive(table) {
+        margin-bottom: 30px;
+    }
+}
+.plan__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include responsive(table) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.plan__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include responsive(big-table) {
+        gap: 15px;
+    }
+}
+.plan__list:not(:last-child) {
+    @include responsive(table) {
+        margin-bottom: 30px;
+        padding-bottom: 40px;
+        border-bottom: 2px solid #F0EDEA;
+    }
+}
+.plan__item-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 3px;
+    @include responsive(big-table) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    @include responsive(table) {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    @include responsive(phone) {
+        margin-bottom: 0;
+    }
+}
+.plan__item {
+    width: 100%;
+    max-width: 234px;
+    text-align: left;
+    display: flex;
+    gap: 14px;
+    font-family: $font-arimo;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    @include responsive(big-table) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    @include responsive(table) {
+        font-size: 18px;
+        line-height: 20px;
+        max-width: 100%;
+    }
+    @include responsive(phone) {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 

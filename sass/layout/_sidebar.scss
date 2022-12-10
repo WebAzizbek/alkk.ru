@@ -1,395 +1,675 @@
 .futuraes {
-    width: 100%;
-    background: linear-gradient(0deg, #333333, #333333), linear-gradient(0deg, #333333, #333333), #735FF2;
-    color: $color-white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8.5px 0;
-    gap: 56px;
-    @include responsive(phone) {
-        display: none;
-    }
+  width: 100%;
+  background: linear-gradient(0deg, #333333, #333333),
+    linear-gradient(0deg, #333333, #333333), #735ff2;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.5px 0;
+  gap: 56px;
+  @include responsive(phone) {
+    display: none;
+  }
 }
 .futuraes__item {
-    font-size: 14px;
-    line-height: 21px;
+  font-size: 14px;
+  line-height: 21px;
 }
 .images {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 .images__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
-
-
 
 // CALC
 
-
 .calc {
-    margin-bottom: 80px;
-    padding: 80px 0;
-    background: linear-gradient(0deg, #F5F7F9, #F5F7F9), #ECE8E5;
-    @include responsive(table) {
-        margin-bottom: 40px;
-        padding: 60px 0;
-    }
-    .container {
-    }
+  margin-bottom: 80px;
+  padding: 80px 0;
+  background: linear-gradient(0deg, #f5f7f9, #f5f7f9), #ece8e5;
+  @include responsive(table) {
+    margin-bottom: 40px;
+    padding: 60px 0;
+  }
+  .container {
+  }
 }
 
 .calc__title-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 11px;
-    margin-bottom: 45px;
-    @include responsive(big-table) {
-        gap: 8px;
-        margin-bottom: 20px;
-    }
-    @include responsive(table) {
-        margin-bottom: 10px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin-bottom: 45px;
+  @include responsive(big-table) {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  @include responsive(table) {
+    margin-bottom: 10px;
+  }
 }
 .calc__title {
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 55px;
-    @include responsive(big-table) {
-        font-size: 45px;
-    }
-    @include responsive(table) {
-        font-size: 30px;
-    }
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55px;
+  @include responsive(big-table) {
+    font-size: 45px;
+  }
+  @include responsive(table) {
+    font-size: 30px;
+  }
 }
 .calc__title-fire {
-    display: block;
-    @include responsive(big-table) {
-        width: 40px;
-        height: 40px;
-    }
-    @include responsive(table) {
-        width: 30px;
-        height: 30px;
-    }
+  display: block;
+  @include responsive(big-table) {
+    width: 40px;
+    height: 40px;
+  }
+  @include responsive(table) {
+    width: 30px;
+    height: 30px;
+  }
 }
 .calc__wrapper {
-    padding: 45px 46px 45px 47px;
-    box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 20px; 
-    text-align: center;
-    background-color: #FFFFFF;
-    @include responsive(big-table) {
-        padding: 35px 36px 35px 37px;
-    }
-    @include responsive(table) {
-        padding: 20px 36px 35px 37px;
-    }
+  padding: 45px 46px 45px 47px;
+  box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  @include responsive(big-table) {
+    padding: 35px 36px 35px 37px;
+  }
+  @include responsive(table) {
+    padding: 20px 36px 35px 37px;
+  }
 }
 .calc__wrapper-title {
-    text-align: center;
-    margin-bottom: 35px;
-    @include responsive(big-table) {
-        margin-bottom: 25px;
-        font-size: 35px;
-    }
-    @include responsive(table) {
-        margin-bottom: 15px;
-        font-size: 27px;
-    }
+  text-align: center;
+  margin-bottom: 35px;
+  @include responsive(big-table) {
+    margin-bottom: 25px;
+    font-size: 35px;
+  }
+  @include responsive(table) {
+    margin-bottom: 15px;
+    font-size: 27px;
+  }
 }
 
 .calc__wrapper-region {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include responsive(table) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.region__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @include responsive(table) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.region__item {
+  padding: 8px 18px 8px 16px;
+  background: linear-gradient(0deg, #eaecef, #eaecef), #eaecef;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include responsive(big-table) {
+    padding: 5px 10px;
+  }
+  @include responsive(table) {
+    min-width: 80vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include responsive(table) {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-.region__list {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    @include responsive(table) {
-        flex-direction: column;
-        width: 100%;
-    }
-}
-.region__item {
-    padding: 8px 18px 8px 16px;
-    background: linear-gradient(0deg, #EAECEF, #EAECEF), #EAECEF;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    @include responsive(big-table) {
-        padding: 5px 10px;
-    }
-    @include responsive(table) {
-        min-width: 80vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  }
 }
 .region__item-text {
-    font-family: $font-arimo;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    @include responsive(big-table) {
-        font-size: 15px;
-        line-height: 20px;
-    }
+  font-family: $font-arimo;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  @include responsive(big-table) {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 .region__item-text-arrow {
-    width: 8px;
-    height: 4px;
-    display: block;
-    opacity: 0,8;
+  width: 8px;
+  height: 4px;
+  display: block;
+  opacity: 0, 8;
 }
 .region__promoted {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-   
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .region__promoted-box {
-    width: 20px;
-    height: 20px;
-    border: 1px solid rgba(51, 51, 51, 0.5);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .region__promted-arrow {
-    display: none;
+  display: none;
 }
 .region__promted-arrow-none {
-    display: block;
+  display: block;
 }
 .region__promted-text {
-    font-family: $font-arimo;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    @include responsive(big-table) {
-        font-size: 13px;
-        line-height: 20px;
-    }
+  font-family: $font-arimo;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  @include responsive(big-table) {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 // DROPDAWN
 .region__dropdown {
-    position: relative;
+  position: relative;
 }
 .region__this {
-    
 }
 .region__variants {
-    position: absolute;
-    top: calc(100% + 5px);
-    background-color: #EAECEF;
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    pointer-events: none;
-    z-index: 3;
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: #eaecef;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+  z-index: 3;
 }
 .regions__variant {
-    padding: 4px 8px;
-    background-color: #EAECEF;
-    font-family: $font-arimo;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 24px;
-    color: $color-text;
-    &:hover {
-        background-color: $color-white;
-    }
+  padding: 4px 8px;
+  background-color: #eaecef;
+  font-family: $font-arimo;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 24px;
+  color: $color-text;
+  text-align: left;
+  &:hover {
+    background-color: $color-white;
+  }
 }
 .region__show {
-    .region__variants {
-        opacity: 1;
-        pointer-events: visible;
-    }
+  .region__variants {
+    opacity: 1;
+    pointer-events: visible;
+  }
 }
-
 
 // input
 .range {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .range-const {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .range-text {
-    font-family: $font-arimo;
-    font-weight: 500;
-    font-style: 10px;
-    line-height: 15px;
+  font-family: $font-arimo;
+  font-weight: 500;
+  font-style: 10px;
+  line-height: 15px;
 }
 .range-val {
-    font-family: $font-arimo;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: $font-arimo;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 .range-span {
-    font-family: $font-arimo;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+  font-family: $font-arimo;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .range-input {
-    background: #F4F7FE;
+  background: #f4f7fe;
 }
 
-
-input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 5px;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #fff, #FF0404);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #fff, #ff0404);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    background: #FF0404;
-    cursor: ew-resize;
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ff0404;
+  cursor: ew-resize;
 }
-input[type=range]::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    box-shadow: none;
-    border: none;
+input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
 }
 
 .calc__btn {
-    display: inline-block;
-    font-family: $font-arimo;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    padding: 11px 30px;
-    border: 1px solid #FF0404;
-    border-radius: 5px;
-    background-color: transparent;
-    color: $color-primary;
-    margin-bottom: 45px;
-    &:hover {
-        background-color: $color-primary;
-        color: $color-white;
-        transition: all .4s;
-    }
+  display: inline-block;
+  font-family: $font-arimo;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 11px 30px;
+  border: 1px solid #ff0404;
+  border-radius: 5px;
+  background-color: transparent;
+  color: $color-primary;
+  margin-bottom: 45px;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    transition: all 0.4s;
+  }
 }
 
 .plan {
-    position: relative;
+  position: relative;
 }
 .plan__center {
-    margin: 0 7px;
-    @include responsive(table) {
-        display: none;
-    }
+  margin: 0 7px;
+  @include responsive(table) {
+    display: none;
+  }
 }
 .plan__title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 36px;
-    @include responsive(big-table) {
-        font-size: 25px;
-        line-height: 25px;
-    }
-    @include responsive(table) {
-        margin-bottom: 30px;
-    }
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 36px;
+  @include responsive(big-table) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  @include responsive(table) {
+    margin-bottom: 30px;
+  }
 }
 .plan__wrapper {
-    display: flex;
-    justify-content: space-between;
-    @include responsive(table) {
-        flex-direction: column;
-        justify-content: center;
-    }
+  display: flex;
+  justify-content: space-between;
+  @include responsive(table) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .plan__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    @include responsive(big-table) {
-        gap: 15px;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include responsive(big-table) {
+    gap: 15px;
+  }
 }
 .plan__list:not(:last-child) {
-    @include responsive(table) {
-        margin-bottom: 30px;
-        padding-bottom: 40px;
-        border-bottom: 2px solid #F0EDEA;
-    }
+  @include responsive(table) {
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #f0edea;
+  }
 }
 .plan__item-title {
-    font-weight: 700;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 3px;
+  @include responsive(big-table) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @include responsive(table) {
     font-size: 22px;
     line-height: 22px;
-    text-align: center;
-    margin-bottom: 3px;
-    @include responsive(big-table) {
-        font-size: 20px;
-        line-height: 20px;
-    }
+  }
+  @include responsive(phone) {
+    margin-bottom: 0;
+  }
+}
+.plan__item {
+  width: 100%;
+  max-width: 234px;
+  text-align: left;
+  display: flex;
+  gap: 14px;
+  font-family: $font-arimo;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  @include responsive(big-table) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @include responsive(table) {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+  @include responsive(phone) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+// TARIF STYLES
+.tarif {
+  margin-bottom: 80px;
+  @include responsive(big-table) {
+    margin-bottom: 60px;
+  }
+  .container {
+  }
+}
+
+.tarif__title {
+  text-align: center;
+  margin-bottom: 45px;
+  @include responsive(big-table) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  @include responsive(table) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+.tarif__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-bottom: 20px;
+  @include responsive(big-table) {
+    gap: 30px;
+  }
+  @include responsive(table) {
+    display: none;
+  }
+}
+.tarif__nav-item {
+}
+.tarif__nav-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  @include responsive(table) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.tarif__scan {
+}
+.tarif__scan-title:first-child {
+  display: block;
+  padding: 8px 0;
+  background: linear-gradient(0deg, #ffd773, #ffd773), #f4f7fe;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 35px;
+  @include responsive(big-table) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  @include responsive(table) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+.tarif__scan-title:nth-child(3) {
+  display: block;
+  padding: 8px 0;
+  background: linear-gradient(0deg, #77cbfa, #77cbfa), #f4f7fe;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 35px;
+  @include responsive(big-table) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  @include responsive(table) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+.tarif__scan-list {
+}
+.tarif__scan-list:nth-child(2) {
+  margin-bottom: 35px;
+  @include responsive(big-table) {
+    margin-bottom: 30px;
+  }
+}
+.tarif__scan-list:nth-child(4) {
+  margin-bottom: 25px;
+}
+.tarif__scan-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include responsive(table) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+}
+.tarif__scan-item:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eaecef;
+  margin-bottom: 20px;
+  @include responsive(table) {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+.tarif__scan-item-title-wrapper {
     @include responsive(table) {
-        font-size: 22px;
-        line-height: 22px;
+        flex-direction: column ;
     }
+}
+.tarif__scan-item-title {
+  width: 100%;
+  max-width: 411px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  @include responsive(big-table) {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+.tarif__scan-list .tarif__scan-item-title:first-child {
+  width: 411px;
+  @include responsive(big-table) {
+    width: 100%;
+  }
+}
+.tarif__scan-item-text {
+  width: 100%;
+  max-width: 411px;
+  font-family: $font-arimo;
+  font-size: 16px;
+  line-height: 18px;
+  @include responsive(big-table) {
+    max-width: 350px;
+    font-size: 14px;
+    line-height: 16px;
+}
+@include responsive(table) {
+    margin-bottom: 20px;
+}
+}
+
+.tarif__scan-item-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 62px;
+  min-height: 102px;
+  @include responsive(big-table) {
+    gap: 40px;
+  }
+  @include responsive(table) {
+    display: none;
+}
+
+}
+.tarif__scan-item-img-wrapper .tarif__scan-check-img:last-child {
+  margin-right: 62px;
+  @include responsive(big-table) {
+    margin-right: 40px;
+  }
+}
+.tarif__scan-img-arrow {
+  min-height: 102px;
+  min-width: 2px;
+}
+.tarif__scan-check-img {
+  width: 18px;
+  height: 12px;
+}
+.tarif__scan-red-img {
+}
+.tarif__scan-white-img {
+}
+// on
+.tarif__nav-on {
+    display: none;
+    @include responsive(table) {
+        display: block;
+    }
+}
+.tarif__item-on {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 105px;
+}
+.tarif__nav-on-link {
+}
+
+
+
+.tarif__btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    @include responsive(table) {
+        gap: 10px;
+    }
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+}
+.tarif__btn-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include responsive(phone) {
+        padding: 22px 20px;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        background: linear-gradient(0deg, #F5F7F9, #F5F7F9), #EAECEF;
+        border-radius: 5px;
+    }
+}
+.tarif__btn-cost {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
     @include responsive(phone) {
         margin-bottom: 0;
     }
 }
-.plan__item {
-    width: 100%;
-    max-width: 234px;
-    text-align: left;
-    display: flex;
-    gap: 14px;
-    font-family: $font-arimo;
-    font-weight: 500;
+.tarif__btn-item:first-child .tarif__btn-cost::before {
+    content: "Продвинутый";
+    font-weight: 600;
     font-size: 16px;
-    line-height: 18px;
-    @include responsive(big-table) {
-        font-size: 14px;
-        line-height: 16px;
-    }
-    @include responsive(table) {
-        font-size: 18px;
-        line-height: 20px;
-        max-width: 100%;
-    }
-    @include responsive(phone) {
-        font-size: 16px;
-        line-height: 18px;
+    line-height: 19px;
+}
+.tarif__btn-item:nth-child(2) .tarif__btn-cost::before {
+    content: "Комплексный";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+.tarif__btn-item:nth-child(3) .tarif__btn-cost::before {
+    content: "Потрясающий";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+.tarif__btn-item:nth-child(4) .tarif__btn-cost::before {
+    content: "Оптимизация";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+.tarif__btn {
+    display: block;
+    padding: 8px 25px;
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    font-family: $font-arimo;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    transition: all 0.4s;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
     }
 }
-

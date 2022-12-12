@@ -934,7 +934,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
-    background: linear-gradient(0deg, #F5F7F9, #F5F7F9), #EAECEF;
+    background: linear-gradient(0deg, #f5f7f9, #f5f7f9), #eaecef;
     border-radius: 5px;
   }
 }
@@ -1151,6 +1151,96 @@ input[type=range]::-webkit-slider-runnable-track {
 .application__btn:hover {
   box-shadow: 0px 20px 35px -10px rgba(255, 45, 45, 0.5);
   color: #fff;
+}
+
+.user {
+  padding: 80px 0;
+}
+@media only screen and (max-width: 576px) {
+  .user {
+    padding: 60px 0;
+  }
+}
+.user__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 100px;
+}
+@media only screen and (max-width: 992px) {
+  .user__list {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .user__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.user__item {
+  text-align: center;
+}
+@media only screen and (max-width: 380px) {
+  .user__item {
+    display: flex;
+  }
+}
+
+.user__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 36px;
+}
+@media only screen and (max-width: 380px) {
+  .user__img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .user__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.user__title {
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: -0.31px;
+  margin-bottom: 13px;
+}
+@media only screen and (max-width: 380px) {
+  .user__title {
+    margin-bottom: 10px;
+  }
+}
+
+.user__text {
+  width: 100%;
+  max-width: 168px;
+  font-family: "Arimo", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.31px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 380px) {
+  .user__text {
+    text-align: left;
+  }
 }
 
 .run {

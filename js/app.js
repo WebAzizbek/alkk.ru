@@ -5,6 +5,9 @@ let galochkaBox = document.querySelector('.region__promoted-box');
 let galochka = document.querySelector('.region__promted-arrow');
 let dropdawns = document.querySelectorAll('.region__dropdown');
 let inp = document.querySelector('.range-input');
+let checkBox = document.querySelector('.application__check-box');
+let checkBoxT = document.querySelector('.application__check-box-text');
+let check = document.querySelector('.application__check-img');
 
 
 barsBtn.addEventListener('click', () => {
@@ -37,4 +40,11 @@ inp.addEventListener('input', () => {
 inp.addEventListener('input', () => {
     document.querySelector('.range-val').innerText = `${inp.value} руб./мес.`
     document.querySelector('.range-val').innerHTML = `<span class="range-span">${inp.value}</span> руб./мес.`
+})
+
+checkBox.addEventListener('click', () => {
+    check.classList.toggle('application__check-img-show');
+})
+checkBoxT.addEventListener('click', () => {
+    check.classList.toggle('application__check-img-show');
 })

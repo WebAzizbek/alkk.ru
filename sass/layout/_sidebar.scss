@@ -673,3 +673,118 @@ input[type='range']::-webkit-slider-runnable-track {
         color: $color-white;
     }
 }
+
+// APPLICATION STYLES
+.application {
+    padding: 80px 0;
+    background-color: $color-text;
+    @include responsive(phone) {
+      padding: 60px 0;
+    }
+    .container {
+    }
+}
+
+.application__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 44px;
+    @include responsive(phone) {
+      font-size: 35px;
+      line-height: 35px;
+      margin-bottom: 30px;
+    }
+}
+.application__form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+    @include responsive(big-table) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    @include responsive(table) {
+        // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        display: flex;
+        flex-direction: column;
+    }
+    @include responsive(phone) {
+      gap: 14px;
+    }
+}
+.application__input {
+    color: $color-white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    outline: none;
+    padding: 18px 0px 18px 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    @include responsive(phone) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+}
+.application__input::placeholder {
+    font-family: $font-arimo;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    opacity: 0.9;
+    padding: 0px 247px 0px 0px;
+}
+.application__check-box-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @include responsive(big-table) {
+        grid-area: 3/2/4/3;
+    }
+    @include responsive(table) {
+        order: 1;
+    }
+}
+.application__check-box {
+    display: block;
+    min-width: 20px;
+    min-height: 20px;
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.application__check-img {
+    display: none;
+}
+.application__check-img-show {
+    display: block;
+}
+.application__check-box-text {
+    font-family: $font-arimo;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-white;
+}
+.application__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12.5px 0px;
+    background-color: $color-primary;
+    font-family: $font-arimo;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+    &:hover {
+        box-shadow: 0px 20px 35px -10px rgba(255, 45, 45, 0.5);
+        color: #fff;
+    }
+}

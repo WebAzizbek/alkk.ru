@@ -1,0 +1,113 @@
+.footer {
+    padding: 80px 0 25px;
+    background-color: $color-text;
+    @include responsive(big-table) {
+        padding: 70px 0 20px;
+    }
+    @include responsive(table) {
+        padding: 60px 0 20px;
+    }
+    .site__container {
+    }
+}
+.footer__box {
+    display: flex;
+    padding-bottom: 80px;
+    border-bottom: solid #666 1px;
+    margin-bottom: 15px;
+    @include responsive(big-table) {
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+    @include responsive(table) {
+        flex-direction: column;
+    }
+    @include responsive(phone) {
+        padding-bottom: 30px;
+    }
+}
+.footer__logo {
+    display: block;
+    @include responsive(table) {
+        margin-bottom: 41px;
+    }
+}
+.footer__logo-img {
+    display: block;
+}
+.footer__nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 57px;
+    @include responsive(big-table) {
+        margin-left: 0;
+        margin-right: 0;
+        gap: 30px;
+    }
+    @include responsive(phone) {
+        flex-direction: column;
+    }
+}
+.footer__item {
+    display: flex;
+    flex-direction: column;
+
+}
+.footer__item-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color-white;
+    
+}
+.footer__span {
+    display: block;
+    width: 34px;
+    height: 2px;
+    background-color: $color-primary;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    @include responsive(phone) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.footer__item-link {
+    display: flex;
+    gap: 19.5px;
+    color: $color-white;
+    font-family: $font-arimo;
+    font-size: 16px;
+    line-height: 18px;
+    @include responsive(phone) {
+        gap: 13px;
+    }
+}
+.footer__item-link:not(:last-child) {
+    margin-bottom: 13px;
+}
+.footer__item-img {
+    display: block;
+}
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__create {
+    font-family: $font-arimo;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-white;
+    font-weight: 500;
+}
+.footer__map {
+    font-family: $font-arimo;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-white;
+    font-weight: 500;
+}
